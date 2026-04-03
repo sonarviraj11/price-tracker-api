@@ -17,4 +17,4 @@ def get_prices():
     return jsonify([{"name": r[0], "price": r[1]} for r in rows])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
